@@ -17,7 +17,7 @@ document.querySelector('#app').innerHTML = `
         <span class="badge">Artisan Roastery</span>
         <h1>Roast of the <br><span class="neon-text">Deep</span></h1>
         <p>Premium specialty coffee from the highlands to your cup. We find solace in the midnight steam.</p>
-        <button class="btn-primary">Reserve a Seat</button>
+        <button class="btn-primary">Visit Us</button>
       </div>
     </div>
 

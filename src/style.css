@@ -172,7 +172,26 @@ p { color: var(--text-muted); font-size: 1.1rem; line-height: 1.5; margin-bottom
   .header { padding: 30px; }
 }
 @media (max-width: 600px) {
-  .bento-container { grid-template-columns: 1fr; }
-  .hero, .bento-large, .bento-wide, .gallery-tall { grid-column: span 1; grid-row: auto; min-height: 350px; }
-  h1 { font-size: 3rem; }
+  .bento-container { 
+    grid-template-columns: 1fr; 
+    padding: 0 20px 60px;
+    grid-auto-rows: min-content; /* Allow items to grow based on content */
+  }
+  .hero, .bento-large, .bento-wide, .gallery-tall { 
+    grid-column: span 1; 
+    grid-row: auto; 
+    min-height: 420px; /* Increased to fit hero content */
+  }
+  .bento-item {
+    padding: 24px;
+    overflow: visible; /* Allow shadows and hover effects to spill out */
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h1 { font-size: 2.8rem; }
+  p { font-size: 1rem; margin-bottom: 20px; }
+  .header { padding: 30px 20px; }
 }
